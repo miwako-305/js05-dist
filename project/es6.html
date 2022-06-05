@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function add (a,b) {
+    return a+b;
+    }
+    console.log(add(3,4));
+// Javascript特有の書き方 アロー関数
+// 最近出てきた新しい書き方
+const add2 = (a,b) => {
+    return a+b;
+};
+console.log(add2(3,4));
+const results = ['大吉','吉','凶'];
+for(let i = 0; i< results.length; i++){
+    console.log(results[i]);
+};
+
+// Functionの中の引数？の意味がよくわかっていない、、、
+
+results.forEach(function(result){
+    console.log(result);
+});
+
+results.forEach((r) => {
+    console.log(r);
+});
+
+</script>
+</body>
+</html>
